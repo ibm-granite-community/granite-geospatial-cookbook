@@ -54,7 +54,7 @@ jobs:
       - name: Checkout
         if: ${{ inputs.pr }}
         id: checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.pr && format('refs/pull/{0}/head',inputs.pr) || '' }}
 
